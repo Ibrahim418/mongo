@@ -1,0 +1,29 @@
+.dataresulat{
+overflow: hidden;
+overflow-y: auto;
+box-shadow:  rgba(0, 0, 0, 0) 0px 5px 15px;
+margin-top: 5px;
+
+}
+.dataresulat::-webkit-scrollbar{
+    display: none;
+}
+.dataresulat .dataItem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(225, 224, 231);
+}
+.dataItem 
+Link{
+    text-decoration: none;
+}
+Link:hover{
+    background-color: lightgray;
+
+}
+
+.search-Item{
+    margin-top: 20px;
+}
+

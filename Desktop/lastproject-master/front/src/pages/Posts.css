@@ -1,0 +1,28 @@
+.postgr {
+  width:20%;
+ background-color: white;
+ margin-right: auto;
+ margin-left: auto;
+ border: 1px solid lightgray;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+/* .post__image {
+ max-width: 100%;
+ max-height: 300px;
+ text-align: center;
+}
+.post__text {
+margin: 20px 0px 20px 20px
+}
+.post__text {
+ font-weight: normal;
+ padding: 5px;
+}a
+.post__form {
+ display: flex;
+ margin-top: 20px;
+}
+.post__input {
+ flex: 1;
+} */

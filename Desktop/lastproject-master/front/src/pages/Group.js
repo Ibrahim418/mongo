@@ -79,6 +79,9 @@ const Group = () => {
                    </li>
                    </ul>
              )})}
+             <br/>
+             <br/>
+             <br/>
         <Button type="primary" onClick={handleShow}>
         Open Modal
       </Button>

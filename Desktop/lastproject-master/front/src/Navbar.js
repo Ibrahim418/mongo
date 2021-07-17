@@ -49,10 +49,10 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            INTO THE WIL <i class="fas fa-caravan"></i>
+            INTO THE WIL <i style={{color:'white'}} class="fas fa-caravan"></i>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i className={click ? "fas fa-times" : "fas fa-bars" } style={{color:'white'}}/>
           </div>
           {auth.isAuth ? (
             <div>

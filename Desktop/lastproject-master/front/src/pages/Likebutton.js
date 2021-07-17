@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector ,useDispatch} from 'react-redux';
 import { addliketopost } from '../action/postaction';
-import {HeartOutlined} from "@ant-design/icons"
+import {BankTwoTone, BugTwoTone, HeartOutlined} from "@ant-design/icons"
+import './Likebutton.css'
 
 const Likebutton = ({post}) => {
     const [liked, setLiked] = useState(false);
@@ -24,18 +25,27 @@ const Likebutton = ({post}) => {
     //     setLiked(false);
     //   };
 
-
+    const [classlist ,setClasslist]=useState([
+      'far','fa-heart'
+    ])
       const like = () => {
-        dispatch(addliketopost(post._id, user._id))
-        setLiked(true);
-      };
-
+        classlist.some(elm => elm==='far')?
+        setClasslist([...classlist.filter(el=>el!=='far'),'fas']):
+        setClasslist([...classlist.filter(el=>el!=='fas'),'far'])
+         dispatch(addliketopost(post._id, user._id))
+   
+        }
+     
+        
     return (
-        <div>
+      <div>
+        <div className='toggle'>
         
          
-          <HeartOutlined  style={{color:'black' }} onClick={like} alt="like" />
+        <i id='btttn' className={classlist.join(' ')} onClick={like} ></i>  
           <span>{post.likers.length}</span>
+        </div>
+       
         </div>
     )
 }

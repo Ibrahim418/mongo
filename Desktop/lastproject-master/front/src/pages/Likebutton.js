@@ -25,14 +25,10 @@ const Likebutton = ({post}) => {
     //     setLiked(false);
     //   };
 
-    const [classlist ,setClasslist]=useState([
-      'far','fa-heart'
-    ])
+    
       const like = () => {
-        classlist.some(elm => elm==='far')?
-        setClasslist([...classlist.filter(el=>el!=='far'),'fas']):
-        setClasslist([...classlist.filter(el=>el!=='fas'),'far'])
-         dispatch(addliketopost(post._id, user._id))
+        setLiked(true);
+        dispatch(addliketopost(post._id, user._id))
    
         }
      
@@ -42,7 +38,7 @@ const Likebutton = ({post}) => {
         <div className='toggle'>
         
          
-        <i id='btttn' className={classlist.join(' ')} onClick={like} ></i>  
+        <i id='btttn' className={liked? 'fas fa-heart' :'far fa-heart' } onClick={like} ></i>  
           <span>{post.likers.length}</span>
         </div>
        

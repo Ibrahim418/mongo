@@ -64,7 +64,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-            INTO THE WIL <i class="fas fa-caravan"></i>
+            INTO THE WIL <i class="fas fa-caravan" style={{color:'white'}}></i>
             </Link>
           </div>
           <small class='website-rights'>into the wild © 2021</small>

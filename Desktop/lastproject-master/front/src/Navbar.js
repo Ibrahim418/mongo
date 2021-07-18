@@ -57,8 +57,9 @@ const Navbar = () => {
           {auth.isAuth ? (
             <div>
               <ul className={click ? "nav-menu active" : "nav-menu"}>
-             
+              <li style={{marginLeft:'33%'}}> 
       <Searchbar  />   
+      </li>
                 <li className="nav-Item">
                   <Link
                     to="/Profile"
